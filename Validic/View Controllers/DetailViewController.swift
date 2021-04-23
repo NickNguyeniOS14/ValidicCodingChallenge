@@ -13,7 +13,6 @@ class DetailViewController: UITableViewController {
 
     let languages: [String]
     let city: String
-    let tableViewCellID = "TableViewCell"
 
     // MARK: - Initialization
 
@@ -33,7 +32,7 @@ class DetailViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         title = city
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: tableViewCellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.detailCellId)
     }
 
     // MARK: - Table View DataSource
@@ -44,7 +43,7 @@ class DetailViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.detailCellId, for: indexPath)
 
         let language = languages[indexPath.row]
 
@@ -52,7 +51,9 @@ class DetailViewController: UITableViewController {
             if let error = error {
                 print(error.localizedDescription)
             }
-            // TODO: Calculate to percentage
+
+            // STUCK: Calculate percentage
+
             DispatchQueue.main.async {
                 cell.textLabel?.text = "\(language):    \(jobs.count) jobs."
             }

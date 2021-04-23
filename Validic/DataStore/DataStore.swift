@@ -16,14 +16,14 @@ class DataStore {
     lazy var programmingLanguages = ["Java","C#","Python","Swift","Objective-C","Ruby","Kotlin","Go","C++","Scala"]
 
     lazy var data: [String: [String]] = ["Boston": programmingLanguages,
-                                         "SanFrancisco": programmingLanguages,
-                                         "LosAngeles": programmingLanguages,
+                                         "San Francisco": programmingLanguages,
+                                         "Los Angeles": programmingLanguages,
                                          "Denver": programmingLanguages,
                                          "Boulder": programmingLanguages,
                                          "Chicago": programmingLanguages,
-                                         "NewYork": programmingLanguages,
+                                         "New York": programmingLanguages,
                                          "Raleigh": programmingLanguages]
-    var cities: [String] {
+     var cities: [String] {
         return data.map { $0.key }
     }
 }

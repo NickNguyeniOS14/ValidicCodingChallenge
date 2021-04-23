@@ -9,21 +9,29 @@ import Foundation
 
 class NetworkService {
 
+    // MARK: - Properties
+
     private let dataLoader: NetworkDataLoader
 
     var jobs: [Job] = []
 
+    var totalJobs: [Job] = []
+
     static let shared = NetworkService()
+
+    // MARK: - Init
 
     init(dataLoader: NetworkDataLoader = URLSession.shared) {
         self.dataLoader = dataLoader
     }
 
+    // MARK: - Action
+    
     func getJobsPercentage(language: String, city: String, completion: @escaping ([Job],Error?) -> Void)  {
-        let endpoint = "https://jobs.github.com/positions.json?description=\(language.lowercased())&location=\(city.lowercased())"
+        let endpoint = "https://jobs.github.com/positions.json?description=\(language.lowercased())&location=\(city.lowercased().replacingOccurrences(of: " ", with: "+"))"
 
         let url = URL(string: endpoint)!
-
+        
         let urlRequest = URLRequest(url: url)
 
         dataLoader.loadData(using: urlRequest) { (data, _, _) in
@@ -33,6 +41,7 @@ class NetworkService {
             do {
                 let jobs = try JSONDecoder().decode([Job].self, from: data)
                 self.jobs = jobs
+                self.totalJobs += jobs
                 DispatchQueue.main.async {
                     completion(jobs, nil)
                 }

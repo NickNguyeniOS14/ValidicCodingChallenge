@@ -14,7 +14,7 @@ class ValidicTests: XCTestCase {
         let webService = NetworkService()
         let expectation = self.expectation(description: "Wait for results")
 
-        webService.getJobsPercentage(language: "Swift", city: "Denver") { (jobs, error) in
+        webService.getJobsPercentage(language: "Python", city: "New York") { (jobs, error) in
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 5)
@@ -25,7 +25,7 @@ class ValidicTests: XCTestCase {
             let webService = NetworkService()
             let expectation = self.expectation(description: "Wait for results ")
 
-            webService.getJobsPercentage(language: "Swift", city: "Denver") { (jobs, error) in
+            webService.getJobsPercentage(language: "Python", city: "New York") { (jobs, error) in
                 expectation.fulfill()
             }
             wait(for: [expectation], timeout: 5)
@@ -40,7 +40,7 @@ class ValidicTests: XCTestCase {
 
         let expectation = self.expectation(description: "Wait for results")
 
-        mockWebService.getJobsPercentage(language: "Python", city: "NewYork", completion: { (jobs, error) in
+        mockWebService.getJobsPercentage(language: "Python", city: "New York", completion: { (jobs, error) in
             expectation.fulfill()
         })
         wait(for: [expectation], timeout: 10)

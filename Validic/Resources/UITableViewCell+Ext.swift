@@ -8,5 +8,6 @@
 import UIKit
 
 extension UITableViewCell {
-    static let cellID = "Cell"
+    static let homeTableCellId = "Cell"
+    static let detailCellId = "TableViewCell"
 }

@@ -19,7 +19,7 @@ class JobsTableViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Validic"
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.cellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.homeTableCellId)
         tableView.tableFooterView = UIView()
     }
 
@@ -31,7 +31,9 @@ class JobsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.cellID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.homeTableCellId, for: indexPath)
+
+        cell.accessoryType = .disclosureIndicator
 
         cell.textLabel?.text = dataStore.cities[indexPath.row]
 
@@ -49,4 +51,3 @@ class JobsTableViewController: UITableViewController {
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }
-
