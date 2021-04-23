@@ -12,6 +12,9 @@ iOS Take home test for an iOS position at Validic.
 # Areas of the code I'm least proud of:
 
 # Tradeoffs I made:
+  - Build UI programmatically instead of using Storyboard to speed up development.
 
 # Next area of focus to move this beyond MVP:
-
+  - Polish the UI.
+  - Write UI Test.
+  - Handle error properly.
