@@ -12,7 +12,25 @@
 		B6817C3126330BE9003C18A3 /* JobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C3026330BE9003C18A3 /* JobsTableViewController.swift */; };
 		B6817C3626330BEA003C18A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6817C3526330BEA003C18A3 /* Assets.xcassets */; };
 		B6817C3926330BEA003C18A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */; };
+		B6817C4D263344C6003C18A3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C4C263344C6003C18A3 /* DetailViewController.swift */; };
+		B6817C50263345EA003C18A3 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C4F263345EA003C18A3 /* DataStore.swift */; };
+		B6817C56263346A6003C18A3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C55263346A6003C18A3 /* NetworkService.swift */; };
+		B6817C5B26334DD4003C18A3 /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C5A26334DD4003C18A3 /* UITableViewCell+Ext.swift */; };
+		B6817C632633525A003C18A3 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C622633525A003C18A3 /* APIHelper.swift */; };
+		B6817C6C263352ED003C18A3 /* ValidicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C6B263352ED003C18A3 /* ValidicTests.swift */; };
+		B6817C7626335306003C18A3 /* MockDataLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C7526335306003C18A3 /* MockDataLoading.swift */; };
+		B6817C7A26335366003C18A3 /* mockJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C7926335366003C18A3 /* mockJSON.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6817C6E263352ED003C18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6817C2126330BE9003C18A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6817C2826330BE9003C18A3;
+			remoteInfo = Validic;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B6817C2926330BE9003C18A3 /* Validic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Validic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +40,27 @@
 		B6817C3526330BEA003C18A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6817C3826330BEA003C18A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6817C3A26330BEA003C18A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6817C4C263344C6003C18A3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6817C4F263345EA003C18A3 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		B6817C55263346A6003C18A3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B6817C5A26334DD4003C18A3 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		B6817C622633525A003C18A3 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		B6817C69263352ED003C18A3 /* ValidicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6817C6B263352ED003C18A3 /* ValidicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidicTests.swift; sourceTree = "<group>"; };
+		B6817C6D263352ED003C18A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6817C7526335306003C18A3 /* MockDataLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataLoading.swift; sourceTree = "<group>"; };
+		B6817C7926335366003C18A3 /* mockJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B6817C2626330BE9003C18A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6817C66263352ED003C18A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B6817C2B26330BE9003C18A3 /* Validic */,
+				B6817C6A263352ED003C18A3 /* ValidicTests */,
 				B6817C2A26330BE9003C18A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B6817C2926330BE9003C18A3 /* Validic.app */,
+				B6817C69263352ED003C18A3 /* ValidicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +95,8 @@
 				B6817C49263312C2003C18A3 /* View Controllers */,
 				B6817C4126330CD1003C18A3 /* Storyboards */,
 				B6817C4226330CD9003C18A3 /* Resources */,
+				B6817C5226334630003C18A3 /* DataStore */,
+				B6817C5826334700003C18A3 /* NetworkService */,
 			);
 			path = Validic;
 			sourceTree = "<group>";
@@ -75,6 +114,7 @@
 			children = (
 				B6817C3526330BEA003C18A3 /* Assets.xcassets */,
 				B6817C3A26330BEA003C18A3 /* Info.plist */,
+				B6817C5A26334DD4003C18A3 /* UITableViewCell+Ext.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -92,8 +132,37 @@
 			isa = PBXGroup;
 			children = (
 				B6817C3026330BE9003C18A3 /* JobsTableViewController.swift */,
+				B6817C4C263344C6003C18A3 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B6817C5226334630003C18A3 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C4F263345EA003C18A3 /* DataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		B6817C5826334700003C18A3 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C55263346A6003C18A3 /* NetworkService.swift */,
+				B6817C622633525A003C18A3 /* APIHelper.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		B6817C6A263352ED003C18A3 /* ValidicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C6B263352ED003C18A3 /* ValidicTests.swift */,
+				B6817C6D263352ED003C18A3 /* Info.plist */,
+				B6817C7526335306003C18A3 /* MockDataLoading.swift */,
+				B6817C7926335366003C18A3 /* mockJSON.swift */,
+			);
+			path = ValidicTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +185,24 @@
 			productReference = B6817C2926330BE9003C18A3 /* Validic.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B6817C68263352ED003C18A3 /* ValidicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6817C70263352ED003C18A3 /* Build configuration list for PBXNativeTarget "ValidicTests" */;
+			buildPhases = (
+				B6817C65263352ED003C18A3 /* Sources */,
+				B6817C66263352ED003C18A3 /* Frameworks */,
+				B6817C67263352ED003C18A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6817C6F263352ED003C18A3 /* PBXTargetDependency */,
+			);
+			name = ValidicTests;
+			productName = ValidicTests;
+			productReference = B6817C69263352ED003C18A3 /* ValidicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -127,6 +214,10 @@
 				TargetAttributes = {
 					B6817C2826330BE9003C18A3 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					B6817C68263352ED003C18A3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = B6817C2826330BE9003C18A3;
 					};
 				};
 			};
@@ -144,6 +235,7 @@
 			projectRoot = "";
 			targets = (
 				B6817C2826330BE9003C18A3 /* Validic */,
+				B6817C68263352ED003C18A3 /* ValidicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -158,6 +250,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6817C67263352ED003C18A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -165,13 +264,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6817C5B26334DD4003C18A3 /* UITableViewCell+Ext.swift in Sources */,
+				B6817C50263345EA003C18A3 /* DataStore.swift in Sources */,
 				B6817C3126330BE9003C18A3 /* JobsTableViewController.swift in Sources */,
 				B6817C2D26330BE9003C18A3 /* AppDelegate.swift in Sources */,
+				B6817C632633525A003C18A3 /* APIHelper.swift in Sources */,
 				B6817C2F26330BE9003C18A3 /* SceneDelegate.swift in Sources */,
+				B6817C56263346A6003C18A3 /* NetworkService.swift in Sources */,
+				B6817C4D263344C6003C18A3 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6817C65263352ED003C18A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6817C7626335306003C18A3 /* MockDataLoading.swift in Sources */,
+				B6817C6C263352ED003C18A3 /* ValidicTests.swift in Sources */,
+				B6817C7A26335366003C18A3 /* mockJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6817C6F263352ED003C18A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6817C2826330BE9003C18A3 /* Validic */;
+			targetProxy = B6817C6E263352ED003C18A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */ = {
@@ -341,6 +463,46 @@
 			};
 			name = Release;
 		};
+		B6817C71263352ED003C18A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4939K9623X;
+				INFOPLIST_FILE = ValidicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicknguyen.developer.ValidicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validic.app/Validic";
+			};
+			name = Debug;
+		};
+		B6817C72263352ED003C18A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4939K9623X;
+				INFOPLIST_FILE = ValidicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicknguyen.developer.ValidicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Validic.app/Validic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -358,6 +520,15 @@
 			buildConfigurations = (
 				B6817C3E26330BEA003C18A3 /* Debug */,
 				B6817C3F26330BEA003C18A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6817C70263352ED003C18A3 /* Build configuration list for PBXNativeTarget "ValidicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6817C71263352ED003C18A3 /* Debug */,
+				B6817C72263352ED003C18A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,43 +9,44 @@ import UIKit
 
 class JobsTableViewController: UITableViewController {
 
-    lazy var languages = ["Java","C#","Python","Swift","Objective-C","Ruby","Kotlin","Go","C++","Scala"]
+    // MARK: - Properties
 
-    lazy var cities: [String: [String]] = ["Boston": languages,
-                                           "San Francisco": languages,
-                                           "Los Angeles": languages,
-                                           "Denver": languages,
-                                           "Boulder": languages,
-                                           "Chicago": languages,
-                                           "New York": languages,
-                                           "Raleigh": languages]
+    let dataStore = DataStore()
+
+    // MARK: - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        title = "Validic"
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.cellID)
+        tableView.tableFooterView = UIView()
     }
 
+    // MARK: - Table View Data Source & Delegate
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cities.keys.count
+        return dataStore.cities.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let city = cities.map { $0.key }
-        cell.textLabel?.text = city[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.cellID, for: indexPath)
+
+        cell.textLabel?.text = dataStore.cities[indexPath.row]
+
         return cell
-
     }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       let languages = cities.map { $0.value }
-        let arrayLanguage = (languages[indexPath.row])
-        arrayLanguage.forEach { (aString) in
-            print(aString)
-        }
-    }
 
+        let languages = dataStore.data.map{ $0.value }[indexPath.row]
+
+        let selectedCity = dataStore.cities[indexPath.row]
+
+        let detailVC = DetailViewController(languages: languages, city: selectedCity)
+
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
