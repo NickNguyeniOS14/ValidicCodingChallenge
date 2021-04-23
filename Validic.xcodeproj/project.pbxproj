@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		B6817C2D26330BE9003C18A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C2C26330BE9003C18A3 /* AppDelegate.swift */; };
 		B6817C2F26330BE9003C18A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C2E26330BE9003C18A3 /* SceneDelegate.swift */; };
-		B6817C3126330BE9003C18A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C3026330BE9003C18A3 /* ViewController.swift */; };
-		B6817C3426330BE9003C18A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6817C3226330BE9003C18A3 /* Main.storyboard */; };
+		B6817C3126330BE9003C18A3 /* JobsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6817C3026330BE9003C18A3 /* JobsTableViewController.swift */; };
 		B6817C3626330BEA003C18A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6817C3526330BEA003C18A3 /* Assets.xcassets */; };
 		B6817C3926330BEA003C18A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +18,7 @@
 		B6817C2926330BE9003C18A3 /* Validic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Validic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6817C2C26330BE9003C18A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6817C2E26330BE9003C18A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6817C3026330BE9003C18A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6817C3326330BE9003C18A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6817C3026330BE9003C18A3 /* JobsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsTableViewController.swift; sourceTree = "<group>"; };
 		B6817C3526330BEA003C18A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6817C3826330BEA003C18A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6817C3A26330BEA003C18A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,46 @@
 		B6817C2B26330BE9003C18A3 /* Validic */ = {
 			isa = PBXGroup;
 			children = (
-				B6817C2C26330BE9003C18A3 /* AppDelegate.swift */,
-				B6817C2E26330BE9003C18A3 /* SceneDelegate.swift */,
-				B6817C3026330BE9003C18A3 /* ViewController.swift */,
-				B6817C3226330BE9003C18A3 /* Main.storyboard */,
-				B6817C3526330BEA003C18A3 /* Assets.xcassets */,
-				B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */,
-				B6817C3A26330BEA003C18A3 /* Info.plist */,
+				B6817C4626330F3B003C18A3 /* Application */,
+				B6817C49263312C2003C18A3 /* View Controllers */,
+				B6817C4126330CD1003C18A3 /* Storyboards */,
+				B6817C4226330CD9003C18A3 /* Resources */,
 			);
 			path = Validic;
+			sourceTree = "<group>";
+		};
+		B6817C4126330CD1003C18A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6817C4226330CD9003C18A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C3526330BEA003C18A3 /* Assets.xcassets */,
+				B6817C3A26330BEA003C18A3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6817C4626330F3B003C18A3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C2C26330BE9003C18A3 /* AppDelegate.swift */,
+				B6817C2E26330BE9003C18A3 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6817C49263312C2003C18A3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6817C3026330BE9003C18A3 /* JobsTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +155,6 @@
 			files = (
 				B6817C3926330BEA003C18A3 /* LaunchScreen.storyboard in Resources */,
 				B6817C3626330BEA003C18A3 /* Assets.xcassets in Resources */,
-				B6817C3426330BE9003C18A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6817C3126330BE9003C18A3 /* ViewController.swift in Sources */,
+				B6817C3126330BE9003C18A3 /* JobsTableViewController.swift in Sources */,
 				B6817C2D26330BE9003C18A3 /* AppDelegate.swift in Sources */,
 				B6817C2F26330BE9003C18A3 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +174,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B6817C3226330BE9003C18A3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6817C3326330BE9003C18A3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6817C3726330BEA003C18A3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +308,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4939K9623X;
-				INFOPLIST_FILE = Validic/Info.plist;
+				INFOPLIST_FILE = Validic/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +328,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4939K9623X;
-				INFOPLIST_FILE = Validic/Info.plist;
+				INFOPLIST_FILE = Validic/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
