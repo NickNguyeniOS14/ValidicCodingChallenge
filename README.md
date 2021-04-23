@@ -7,7 +7,9 @@ This is an iOS take home test for an iOS position at Validic.
   - How to model the data of the app.
 
 # Areas of the code I'm most proud of:
-  
+  ```
+  let endpoint = "https://jobs.github.com/positions.json?description=\(language.lowercased())&location=\(city.lowercased().replacingOccurrences(of: " ", with: "+"))"
+  ```
   
 # Areas of the code I'm least proud of:
   
