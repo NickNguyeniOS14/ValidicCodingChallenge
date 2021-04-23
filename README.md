@@ -1,5 +1,5 @@
 # ValidicCodingChallenge
-THis is an iOS take home test for an iOS position at Validic.
+This is an iOS take home test for an iOS position at Validic.
 
 # Challenges I ran into:
   - Calcuate percentage of each programming jobs (Not finish). 
