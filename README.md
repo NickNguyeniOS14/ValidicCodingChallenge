@@ -12,7 +12,16 @@ This is an iOS take home test for an iOS position at Validic.
   ```
   
 # Areas of the code I'm least proud of:
-  
+  ```
+  lazy var data: [String: [String]] = ["Boston": programmingLanguages,
+                                         "San Francisco": programmingLanguages,
+                                         "Los Angeles": programmingLanguages,
+                                         "Denver": programmingLanguages,
+                                         "Boulder": programmingLanguages,
+                                         "Chicago": programmingLanguages,
+                                         "New York": programmingLanguages,
+                                         "Raleigh": programmingLanguages]
+  ```
 # Tradeoffs I made:
   - Built UI programmatically instead of using Storyboard to speed up development.
   - Used mocking technique to test the networking code to make the test run faster and more isolated. 
