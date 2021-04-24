@@ -15,8 +15,6 @@ class NetworkService {
 
     var jobs: [Job] = []
 
-    var totalJobs: [Job] = []
-
     static let shared = NetworkService()
 
     // MARK: - Init
@@ -41,7 +39,6 @@ class NetworkService {
             do {
                 let jobs = try JSONDecoder().decode([Job].self, from: data)
                 self.jobs = jobs
-                self.totalJobs += jobs
                 DispatchQueue.main.async {
                     completion(jobs, nil)
                 }
